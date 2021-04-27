@@ -17,8 +17,8 @@ Rails.application.routes.draw do
   #   resources :products
   Rails.application.routes.draw do
  
-    resources :articles
-   
+    resources :articles do
+      resources :comments
     root 'welcome#index'
   end
   # Example resource route with options:
