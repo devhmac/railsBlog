@@ -19,7 +19,10 @@ Rails.application.routes.draw do
  
     resources :articles do
       resources :comments
+    end
+   
     root 'welcome#index'
+
   end
   # Example resource route with options:
   #   resources :products do
@@ -60,4 +63,7 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+
+
 end
